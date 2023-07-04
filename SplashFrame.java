@@ -13,7 +13,7 @@ class SplashFrame extends JFrame{
 	
 	labAbout = new JLabel("<html><center> Digital Clock </center> </html>");
 	labImage= new JLabel(new ImageIcon("Clock.jpg"));
-	Font f= new Font("Arial" ,Font.BOLD, 100);
+	Font f= new Font("Arial" ,Font.BOLD, 60);
 	labImage.setBounds(0,0,0,0);	
 	labAbout.setFont(f);
 	labAbout.setForeground(Color.BLACK);
@@ -22,9 +22,10 @@ class SplashFrame extends JFrame{
 	c.add(labAbout);
 	c.add(labImage);
 	setUndecorated(true);	
-	setSize(800, 800);
+	setSize(500, 500);
 	setLocation(100,100);
-	setTitle("Splash Frame");	
+	setTitle("Splash Frame");
+	setLocationRelativeTo(null);	
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	setVisible(true);
 
